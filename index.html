@@ -12,8 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	<!-- For the first screen user seen right away -->
-	<style></style>
 </head>
 <body>
 
@@ -21,7 +19,12 @@
 	<header>
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
-				<img class="logo-image" src="img/logo.png" alt="" title="">
+				<picture class="logo-image">
+					<source srcset="img/logo.webp" type="image/webp"></source>
+					<source srcset="img/logo.png" type="image/png"></source>
+					<img type="image/png" alt="logo">
+				</picture>
+				
 			</div>
 
 
@@ -109,7 +112,11 @@
 			<div class="row">
 				<div class="col-md-6 text-center animated wow fadeInLeft">
 					<div class="iphone">
-						<img src="img/iphone.png" alt="" titl="">
+						<picture>
+							<source srcset="img/iphone.webp" type="image/webp">
+							<source srcset="img/iphone.png" type="image/png">
+							<img src="img/iphone.png" alt="iphone">
+						</picture>
 					</div>
 				</div>
 				<div class="col-md-6 animated wow fadeInRight">
