@@ -5,16 +5,16 @@ $(document).ready(function(){
 		event.preventDefault();
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
-
+		console.log('SECTION_POS', section_pos);
 		if(section_pos){
-			window.scrollTo({top:section_pos.top, left:'0px'}, 1000);
+			window.scrollTo({ top: section_pos.top, behavior: 'smooth'});
 		}
 		
 	});
 
 	$('.app_link').click(function(e){
 		event.preventDefault();
-		window.scrollTo({top:$("#hero").position().top, left:'0px'}, 1000);		
+		window.scrollTo({ top: $("#hero").position().top, behavior: 'smooth'});
 	});
 
 
